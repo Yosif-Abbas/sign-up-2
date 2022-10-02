@@ -31,6 +31,7 @@ body{
 .container .form .header{
     margin: 20px;
     font-size: 1.2rem;
+    transition: font-size 0.25s;
 }
 
 .container .form{
@@ -53,5 +54,31 @@ body{
     height: 2.2em;
     padding-left: 3px;
     border-radius: 3px;
+    background: #ddd;
 }
 
+.container .form .inputs .input:focus{
+    background: #fff;
+}
+
+.container .form .btn .link{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background: #ddd;
+    padding: 3px 20%;
+    border-radius: 3px;
+    transition: background 0.25s;
+}
+
+.container .form .btn .link:hover{
+    background: #fff;
+    transition: background 0.15s;
+}
+
+@media screen and (max-width: 800px) {
+    .container .form .header{
+        font-size: 0.8rem;
+        transition: font-size 0.25s;
+    }
+}
